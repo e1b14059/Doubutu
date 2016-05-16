@@ -1,4 +1,4 @@
- AbstractKoma getSelectedKoma() {
+  AbstractKoma getSelectedKoma() {
     for (AbstractKoma k : komaArray) {
       if (k.kStat.selected) return k;
     }

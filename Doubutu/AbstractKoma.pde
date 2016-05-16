@@ -1,4 +1,11 @@
- void draw() {
+abstract class AbstractKoma {
+  String name;
+  int x;
+  int y;
+  int team;//0 or 1
+  KomaStatus kStat;
+
+  void draw() {
     String komaImage = "";
     if (this.team==0 && this.kStat.active) komaImage = this.name+"A.png";
     else if (this.team==1 && this.kStat.active) komaImage = this.name+"B.png";
